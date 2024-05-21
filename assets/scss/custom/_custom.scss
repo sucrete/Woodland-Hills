@@ -1,0 +1,766 @@
+//
+//
+// custom.scss
+//
+// Place your own scss code here.I'm your place for additional custom code.
+// If you need to change the look of the theme go to _user-variables.css file to override Bootstrap and theme  !
+//
+//
+
+//the home page hero h1
+section .hero--home2 .hero__content h1 {
+  line-height: 100%;
+}
+
+
+//the top header on mobile
+.header-top-area {
+  .left {
+    flex-wrap: nowrap;
+
+    @media screen and (max-width: 991px) {
+      border: 0px solid transparent;
+    }
+
+    @include breakpoint(md) {
+      justify-content: end;
+    }
+
+    li {
+      align-items: center;
+
+      @include breakpoint(md) {
+        flex-grow: unset;
+      }
+
+      @media screen and (max-width: 767px) {
+        border: 0px solid transparent;
+      }
+
+      @media screen and (max-width: 575px) {
+        padding-top: 10px;
+        padding-bottom: 9.5px;
+      }
+
+      &:first-of-type {
+        padding-left: 0px;
+        display: flex;
+
+        @media screen and (max-width: 575px) {
+          padding-left: 2px;
+        }
+      }
+
+      &:nth-of-type(2) {
+        @media only screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+
+      &:nth-of-type(3) {
+        display: none;
+
+        @media only screen and (max-width: 768px) {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+
+  .booking-btn {
+    display: none;
+
+    @media only screen and (max-width: 768px) {
+      background-color: #e8a41d;
+      border-radius: 0.25rem;
+      color: $title-color;
+      display: inline-block;
+      font-weight: 700;
+      padding: 0.25rem 0.75rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+//Hero content
+.hero__content {
+  //.custom-btn button for "Greens Fees"
+  .custom-btn {
+    @media screen and (max-width: 991px) {
+      margin-block-start: 12px;
+      padding-inline: 1.2rem;
+      line-height: 38px;
+    }
+  }
+}
+
+//info section on home page
+.blog__wrapper {
+  p {
+    font-size: 20px;
+  }
+}
+
+//Rates content
+section {
+  &.section-rates {
+    h2 {
+      // line-height: .95;
+      padding-left: 0.25rem;
+      text-align: center;
+    }
+
+    .tee-table {
+      font-size: 11px;
+      font-weight: 500;
+      margin-top: 8px;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      $border-color: #cfccc7;
+      letter-spacing: 0.7px;
+
+      tbody {
+        border-top: 1px solid $border-color !important;
+
+        tr {
+          border: 1px solid $border-color;
+          border-top-width: 0px;
+
+          td {
+            padding: 15px 17px;
+          }
+        }
+      }
+
+      &-top {
+        margin-bottom: 0px;
+        background-color: yellow;
+
+        tbody {
+          border-bottom: 1px solid $border-color;
+          tr {
+            .par {
+              color: rgb(15, 100, 15);
+            }
+
+            .handicap {
+              color: rgb(109, 74, 17);
+            }
+
+            &:last-of-type {
+              border-bottom-width: 0px;
+
+              td {
+                border-bottom-width: 0px;
+              }
+            }
+          }
+        }
+      }
+
+      &-bottom {
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+        tbody {
+          border-top: 0px solid black !important;
+          tr {
+            td {
+              &.dot {
+                width: 2%;
+                padding-right: 0px;
+
+                span {
+                  display: inline-block;
+                  height: 12px;
+                  width: 12px;
+                  border-radius: 99px;
+                  margin-bottom: -2.2px;
+                }
+                &-black {
+                  span {
+                    background-color: #680000;
+                  }
+                }
+              }
+
+              &:nth-of-type(2) {
+                padding-left: 9px;
+              }
+
+              &:last-of-type {
+                text-align: right;
+              }
+            }
+          }
+        }
+        &.particulars {
+          tbody {
+            border-top: 0px solid black !important;
+            tr {
+              background-color: #f8f5f0;
+              td:last-of-type {
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.greens-fees {
+    h2 {
+      line-height: .95;
+      padding-left: 0.25rem;
+      text-align: center;
+    }
+    hr {
+      background-color: $border-color;
+      opacity: .45;
+    }
+    .tee-table {
+      font-size: 11px;
+      font-weight: 500;
+      margin-top: 8px;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      $border-color: #cfccc7;
+      letter-spacing: 0.7px;
+
+      tbody {
+        border-top: 1px solid $border-color !important;
+
+        tr {
+          border: 1px solid $border-color;
+          border-top-width: 0px;
+
+          td {
+            padding: 15px 17px;
+          }
+        }
+      }
+
+      &-top {
+        margin-bottom: 0px;
+        background-color: #f8f5f0;
+
+        tbody {
+          border-bottom: 1px solid $border-color;
+          tr {
+            .par {
+              color: rgb(15, 100, 15);
+            }
+
+            .handicap {
+              color: rgb(109, 74, 17);
+            }
+
+            &:last-of-type {
+              border-bottom-width: 0px;
+
+              td {
+                border-bottom-width: 0px;
+              }
+            }
+          }
+        }
+      }
+
+      &-bottom {
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+        tbody {
+          border-top: 0px solid black !important;
+          tr {
+            td {
+              &.dot {
+                width: 2%;
+                padding-right: 0px;
+
+                span {
+                  display: inline-block;
+                  height: 12px;
+                  width: 12px;
+                  border-radius: 99px;
+                  margin-bottom: -2.2px;
+                }
+                &-black {
+                  span {
+                    background-color: #680000;
+                  }
+                }
+              }
+
+              &:nth-of-type(2) {
+                padding-left: 9px;
+              }
+
+              &:last-of-type {
+                text-align: right;
+              }
+            }
+          }
+        }
+        &.particulars {
+          tbody {
+            border-top: 0px solid black !important;
+            tr {
+              background-color: #f8f5f0;
+              td:last-of-type {
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//table on Rates page
+.rates__wrapper {
+  table {
+    th {
+      &:nth-of-type(2) {
+        width: 20%;
+      }
+
+      &:nth-of-type(3) {
+        width: 15%;
+      }
+    }
+  }
+
+  .season-passes {
+    table {
+      th {
+        &:nth-of-type(1) {
+          width: 92%;
+        }
+      }
+
+      // tbody {
+      //     tr {
+      //         td:nth-of-type(2) {
+      //             text-align: right;
+      //         }
+      //     }
+      // }
+    }
+  }
+}
+
+//The Course page styling
+section.course {
+  @media screen and (max-width: 767px) {
+    padding-block-start: 30px;
+  }
+}
+
+//Info section on Home page
+.info-home {
+  padding-top: 100px;
+  background-color: white;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 0px;
+    padding-block-start: 65px;
+    padding-block-end: 120px;
+  }
+
+  .weather-col {
+    @media screen and (min-width: 992px) {
+      position: relative;
+      top: -20px;
+    }
+
+    @media screen and (max-width: 991px) {
+      position: relative;
+      top: 20px;
+    }
+  }
+}
+
+//Contact Page
+section {
+  &.contact {
+    @media screen and (max-width: 767px) {
+      padding-block-end: 20px;
+    }
+  }
+}
+
+//.kirk-card on Contact page
+.kirk-card {
+  padding: 2.5rem;
+  // border: 1px solid #cecece;
+
+  .pga-badge {
+    width: 25%;
+    height: auto;
+  }
+
+  h4 {
+    margin-block-end: 10px;
+  }
+
+  p {
+    line-height: 125%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .kirk-card {
+    position: relative;
+    padding: 1.5rem;
+
+    .pga-badge {
+      position: absolute;
+      width: 80px;
+      top: -45px;
+      right: 12px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .kirk-card {
+    .pga-badge {
+      width: 20%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .kirk-card {
+    position: relative;
+    padding: 1.5rem;
+
+    .pga-badge {
+      position: absolute;
+      width: 70px;
+      top: -50px;
+      right: 17px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .kirk-card {
+    h4 {
+      line-height: 112%;
+      font-size: 18px;
+    }
+
+    p {
+      line-height: 110%;
+      font-size: 14px;
+    }
+  }
+}
+
+//Pro Shop block
+.pro-shop-details {
+  table {
+    tbody {
+      tr {
+        td {
+          &:last-of-type {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+
+    &.pro-shop-gallery {
+      .swiper-wrapper {
+        img {
+          height: 500px;
+        }
+      }
+    }
+  }
+}
+
+//Swiper Course Holes styling
+
+.image-caption {
+  font-family: "Cormorant";
+  font-size: 17px;
+  font-style: italic;
+  color: #216f11;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide .text {
+  font-size: 15px;
+  line-height: 145%;
+  color: rgb(122, 122, 122);
+}
+
+.swiper-slide {
+  img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.strong {
+  color: black;
+  font-weight: 500;
+}
+.swiper-pagination-bullet {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 23.5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  border-radius: 99px;
+  cursor: pointer;
+}
+
+.swiper-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 20px;
+}
+
+//   .mySwiper {
+//     background:#f7f5ef;
+//     border-radius: 5px;
+//   }
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #e8a41c;
+}
+
+.swiper-navigation-prev,
+.swiper-navigation-next {
+  top: var(--swiper-navigation-top-offset, 38%);
+}
+
+.swiper-slide {
+  h2 {
+    line-height: 0.95;
+    padding-left: 0.25rem;
+  }
+
+  .tee-table {
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 8px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    $border-color: #cfccc7;
+    letter-spacing: 0.7px;
+
+    tbody {
+      border-top: 1px solid $border-color !important;
+
+      tr {
+        border: 1px solid $border-color;
+        border-top-width: 0px;
+
+        td {
+          padding: 15px 17px;
+        }
+      }
+    }
+
+    &-top {
+      margin-bottom: 0px;
+      background-color: yellow;
+
+      tbody {
+        tr {
+          .par {
+            color: rgb(15, 100, 15);
+          }
+
+          .handicap {
+            color: rgb(109, 74, 17);
+          }
+
+          &:last-of-type {
+            border-bottom-width: 0px;
+
+            td {
+              border-bottom-width: 0px;
+            }
+          }
+        }
+      }
+    }
+
+    &-bottom {
+      margin-top: 0px;
+      @media screen and (max-width: 991px) {
+        margin-bottom: 0px;
+      }
+      tbody {
+        tr {
+          td {
+            &.dot {
+              width: 2%;
+              padding-right: 0px;
+
+              span {
+                display: inline-block;
+                height: 12px;
+                width: 12px;
+                border-radius: 99px;
+                margin-bottom: -2.2px;
+              }
+
+              &-yellow {
+                span {
+                  background-color: rgb(253, 224, 3);
+                }
+              }
+
+              &-blue {
+                span {
+                  background-color: rgb(22, 10, 190);
+                }
+              }
+
+              &-white {
+                span {
+                  background-color: #fff;
+                }
+              }
+
+              &-red {
+                span {
+                  background-color: rgb(233, 51, 19);
+                }
+              }
+            }
+
+            &:nth-of-type(2) {
+              padding-left: 9px;
+            }
+
+            &:last-of-type {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .swiper-slide .contact__form {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .swiper-slide h2 {
+    padding-top: 1rem;
+  }
+}
+
+//Pro Shop page shop details
+section {
+  &.pro-shop-details {
+    &.padding-top {
+      padding-block-start: 90px;
+
+      @media screen and (max-width: 757px) {
+        padding-block-start: 50px;
+      }
+    }
+
+    &.padding-bottom {
+      @media screen and (max-width: 757px) {
+        padding-block-end: 70px;
+      }
+    }
+
+    th {
+      padding: 4px;
+    }
+  }
+}
+
+//Lightbox styling
+
+.lightbox-wrapper {
+  
+
+  /** LIGHTBOX MARKUP **/
+
+  .lightbox {
+    /* Default to hidden */
+    display: none;
+
+    /* Overlay entire screen */
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /* A bit of padding around image */
+    padding: 1em;
+
+    /* Translucent background */
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Unhide the lightbox when it's the target */
+  .lightbox:target {
+    display: block;
+  }
+
+  .lightbox span {
+    /* Full width and height */
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    /* Size and position background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+//on The 19th Hole page, the wrapper for restaurant info
+.room__wrapper {
+  h3 {
+    margin-block-end: 10px; 
+  }
+
+}
