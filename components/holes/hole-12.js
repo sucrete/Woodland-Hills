@@ -52,7 +52,7 @@ export class HoleTwelve extends LitElement {
           <div class="col col-12 col-lg-6 ">
             <figure class="mb-0">
               <img
-                src="./assets/images/1_golf_images/holes/hole12.jpeg"
+                src="./assets/images/golf-images/holes/hole12.jpeg"
                 alt="image of hole twelve from the cart path"
                 class="rounded img-fluid"
               />

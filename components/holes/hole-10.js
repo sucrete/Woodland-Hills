@@ -52,7 +52,7 @@ export class HoleTen extends LitElement {
           <div class="col col-12 col-lg-6 ">
             <figure class="mb-0">
               <img
-                src="./assets/images/1_golf_images/holes/hole10.jpeg"
+                src="./assets/images/golf-images/holes/hole10.jpeg"
                 alt="image of hole ten from the tee box"
                 class="rounded img-fluid"
               />

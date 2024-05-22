@@ -49,7 +49,7 @@ export class HoleThree extends LitElement {
                   </table>              </div>
               <div class="col col-12 col-lg-6 ">
                 <figure class="mb-0">
-                  <img  src="./assets/images/1_golf_images/holes/hole3.jpeg" alt="image of hole three"
+                  <img  src="./assets/images/golf-images/holes/hole3.jpeg" alt="image of hole three"
                     class="rounded img-fluid">
                 </figure>
               </div>

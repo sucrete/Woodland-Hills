@@ -51,7 +51,7 @@ export class HoleOne extends LitElement {
           </div>
           <div class="col col-12 col-lg-6 ">
             <img
-              src="./assets/images/1_golf_images/holes/hole1.jpeg"
+              src="./assets/images/golf-images/holes/hole1.jpeg"
               alt="image of hole one"
               class="rounded img-fluid"
             />
