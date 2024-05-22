@@ -235,10 +235,11 @@
   @extend %p-rel;
 
   .logo {
-    max-width: 410px;
+    max-width: 450px;
     a {
       img {
-        max-height: 50px;
+        max-height: 62px;
+        margin-top: -3px;
       }
     }
   }
@@ -301,7 +302,9 @@
       color: $wan-orange;
       transition: all 0.25s ease;
       font-weight: 700;
-      // @include shadow($team-orange);
+      box-shadow: 0 0px 1px rgba(0, 0, 0, 0.01), 0 0.5px 2px rgba(0, 0, 0, 0.02),
+        0 1px 4px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.05),
+        0 4px 16px rgba(0, 0, 0, 0.06);
       @extend %p-rel;
 
       @include breakpoint(md) {

@@ -2260,10 +2260,11 @@ ol {
 }
 
 .header-bottom .logo {
-  max-width: 410px;
+  max-width: 450px;
 }
 .header-bottom .logo a img {
-  max-height: 50px;
+  max-height: 62px;
+  margin-top: -3px;
 }
 .header-bottom .mobile-logo a img {
   max-height: 35px;
@@ -2306,6 +2307,7 @@ ol {
   color: #fff5e8;
   transition: all 0.25s ease;
   font-weight: 700;
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.01), 0 0.5px 2px rgba(0, 0, 0, 0.02), 0 1px 4px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.05), 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 @media (min-width: 768px) {
   .header-wrapper .menu-area .booking-btn {
@@ -3114,7 +3116,7 @@ ol {
   }
 }
 .footer .logo__block {
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 .footer .logo__block .footer__brand {
   top: 5px;
