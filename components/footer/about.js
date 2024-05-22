@@ -9,7 +9,7 @@ export class About extends LitElement {
   render() {
     return html`
         <div class="footer__about">
-          <a class="footer__brand mb-1" href="home.html"><img src="assets/images/logo/shirkey-white.png"
+          <a class="footer__brand mb-1" href="index.html"><img src="assets/images/logo/shirkey-white.png"
               alt="logo"></a>
           <div class="hours pb-4 pt-5">
             <h6>Hours:</h6>
