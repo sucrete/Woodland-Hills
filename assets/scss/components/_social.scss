@@ -16,7 +16,7 @@
     @extend %d-inline-block;
     @include add-prefix(transition, $transition);
     @include font-size(18px);
-    color: $title-color;
+    color: $team-orange;
 
     svg,
     i {

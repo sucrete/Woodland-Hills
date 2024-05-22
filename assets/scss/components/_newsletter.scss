@@ -8,7 +8,7 @@
   &__wrapper {
     @extend %p-40;
     background-color: $section-bg-color;
-    border-radius: .75rem;
+    border-radius: 0.75rem;
 
     @include breakpoint(lg) {
       padding: 60px;
@@ -25,8 +25,6 @@
     h2 {
       max-inline-size: 100%;
     }
-
-
   }
 
   .form-control {
@@ -40,17 +38,25 @@
   }
 
   .subscribe-btn {
-    @extend %text-bold,
-    %text-uppercase;
+    @extend %text-bold, %text-uppercase;
     background-color: $theme-color;
     border: none;
     box-shadow: none;
-    color: $title-color;
+    color: $wan-orange;
     padding: 1rem 1.25rem;
-
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    @extend %THE-transition;
     @include breakpoint(lg) {
       padding: 1.35rem 1.75rem;
     }
-
+    &:hover {
+      color: white;
+    }
   }
+}
+input,
+.form-control {
+  border: none;
+  border-radius: 0.5rem;
 }

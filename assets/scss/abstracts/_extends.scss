@@ -1,5 +1,11 @@
 /* @@@@@@@@@@@@@  Extend Property CSS start here  @@@@@@@@@@@@@@ */
 
+/* =========<<Custom extends start>>=========*/
+%THE-transition {
+  transition: all 0.25s ease;
+}
+
+/* =========<<Custom extends end>>=========*/
 
 /*=========<<Flex property extends start>>=========*/
 %flex {
@@ -55,7 +61,6 @@
   align-content: end;
 }
 
-
 %flex-column {
   flex-direction: column;
 }
@@ -81,11 +86,7 @@
   place-content: center;
 }
 
-
 /*=========<<Flex property extends end>>=========*/
-
-
-
 
 /*=========<<Display property extends start>>=========*/
 
@@ -139,10 +140,6 @@
 
 /*=========<<Display property extends end>>=========*/
 
-
-
-
-
 /*=========<<Position property extends start>>=========*/
 %p-rel {
   position: relative;
@@ -186,8 +183,6 @@
 }
 
 /*=========<<Position property extends end>>=========*/
-
-
 
 /*=========<<Text property extends start>>=========*/
 
@@ -273,29 +268,25 @@
 
 /*=========<<Text property extends end>>=========*/
 
-
-
-
 /*=========<<Margin & padding property extends start>>=========*/
 
-$space-stops: ('0': 0,
-  '5': 5px,
-  '10': 10px,
-  '15': 15px,
-  '20': 20px,
-  '25': 25px,
-  '30': 30px,
-  '35': 35px,
-  '40': 40px,
-  '45': 45px,
-  '50': 50px,
-  '55': 55px,
-  '60': 60px,
+$space-stops: (
+  "0": 0,
+  "5": 5px,
+  "10": 10px,
+  "15": 15px,
+  "20": 20px,
+  "25": 25px,
+  "30": 30px,
+  "35": 35px,
+  "40": 40px,
+  "45": 45px,
+  "50": 50px,
+  "55": 55px,
+  "60": 60px,
 );
 
-@each $key,
-$val in $space-stops {
-
+@each $key, $val in $space-stops {
   /*-------<< margin properties >>-------*/
   %m-#{$key} {
     margin: #{$val};
@@ -326,11 +317,8 @@ $val in $space-stops {
   }
 }
 
-
 /*------<< Paddings >>---------*/
-@each $key,
-$val in $space-stops {
-
+@each $key, $val in $space-stops {
   %p-#{$key} {
     padding: #{$val};
   }
@@ -362,9 +350,6 @@ $val in $space-stops {
 
 /*=========<<Margin property extends end>>=========*/
 
-
-
-
 /*=========<<overflow property extends start>>=========*/
 %of-hidden {
   overflow: hidden;
@@ -392,10 +377,6 @@ $val in $space-stops {
 
 /*=========<<overflow property extends end>>=========*/
 
-
-
-
-
 /*=========<<Cursor property extends start>>=========*/
 %c-pointer {
   cursor: pointer;
@@ -422,14 +403,11 @@ $val in $space-stops {
 }
 
 %c-custom {
-  cursor: url(../images/custom-cursor.png),
-    url(../images/custom-cursor.svg),
+  cursor: url(../images/custom-cursor.png), url(../images/custom-cursor.svg),
     auto;
 }
 
 /*=========<<Cursor property extends end>>=========*/
-
-
 
 /*=========<< Height-Width property extends start>>=========*/
 %w-0 {
@@ -452,7 +430,6 @@ $val in $space-stops {
   width: 100%;
 }
 
-
 %h-0 {
   height: 0;
 }
@@ -474,11 +451,6 @@ $val in $space-stops {
 }
 
 /*=========<< Height-Width property extends end>>=========*/
-
-
-
-
-
 
 /*=========<< List Style property extends start>>=========*/
 %list-none {

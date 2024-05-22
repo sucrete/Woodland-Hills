@@ -1,5 +1,11 @@
 /*================*** Header Section Start Here     ***===================*/
 
+.header-menu-part {
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 .header-section {
   @extend %p-rel;
   box-shadow: 0px 10px 10px 0px rgba($black-color, $alpha: 0.1);
@@ -31,7 +37,6 @@
 
     .header-top {
       background-color: $theme-color;
-
       * {
         color: $title-color;
       }
@@ -293,14 +298,15 @@
 
     .booking-btn {
       display: none;
-      color: $title-color;
-
+      color: $wan-orange;
+      transition: all 0.25s ease;
       font-weight: 700;
+      // @include shadow($team-orange);
       @extend %p-rel;
 
       @include breakpoint(md) {
-        background-color: $theme-color;
-        border-radius: 0.25rem;
+        background-color: $team-orange;
+        border-radius: 0.5rem;
         display: inline-block;
         padding: 0.5rem 1.5rem;
         text-transform: uppercase;
@@ -313,6 +319,10 @@
       span {
         z-index: 1;
         @extend %p-rel;
+      }
+      &:hover {
+        color: white;
+        @include shadow(black);
       }
     }
 

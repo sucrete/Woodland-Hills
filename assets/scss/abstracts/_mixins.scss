@@ -2,10 +2,8 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
-
-
-//=====================****===================== 
-//* browser prefix adding  
+//=====================****=====================
+//* browser prefix adding
 @mixin add-prefix($prop, $value) {
   -webkit-#{$prop}: #{$value};
   -moz-#{$prop}: #{$value};
@@ -14,7 +12,6 @@
   #{$prop}: #{$value};
 }
 
-
 // Usage:
 //***********
 
@@ -22,13 +19,17 @@
 //   @include add-prefix(transform, scale3d(2.5, 2, 1.5));
 // }
 
-//*=====================****===================== 
+//*=====================****=====================
 
+@mixin shadow($shadow-color) {
+  box-shadow: 0 1px 1px rgba($shadow-color, 0.02),
+    0 2px 2px rgba($shadow-color, 0.03), 
+    0 4px 4px rgba($shadow-color, 0.04),
+    0 8px 8px rgba($shadow-color, 0.05), 
+    0 16px 16px rgba($shadow-color, 0.06);
+}
 
-
-
-
-//*=====================****===================== 
+//*=====================****=====================
 //Keyframes mixin with vendor prefix
 
 @mixin keyframes($animation-name) {
@@ -80,107 +81,75 @@
 //   @include animation('fade-out 5s 3');
 // }
 
-//=====================****===================== 
+//=====================****=====================
 
-
-
-
-//=====================****===================== 
+//=====================****=====================
 
 //Responsive Breakpoints
 
 @mixin breakpoint($point) {
   @if $point==sm {
     @media (min-width: 576px) {
-      @content ;
+      @content;
     }
-  }
-
-  @else if $point==max-xsm {
+  } @else if $point==max-xsm {
     @media (max-width: 320px) {
-      @content ;
+      @content;
     }
-  }
-
-  @else if $point==max-sm {
+  } @else if $point==max-sm {
     @media (max-width: 575px) {
-      @content ;
+      @content;
     }
-  }
-
-  @else if $point==md {
+  } @else if $point==md {
     @media (min-width: 768px) {
-      @content ;
+      @content;
     }
-  }
-
-  @else if $point==max-md {
+  } @else if $point==max-md {
     @media (max-width: 767px) {
-      @content ;
+      @content;
     }
-  }
-
-  @else if $point==lg {
+  } @else if $point==lg {
     @media (min-width: 992px) {
-      @content ;
+      @content;
     }
-  }
-
-  @else if $point==max-lg {
+  } @else if $point==max-lg {
     @media (max-width: 991px) {
-      @content ;
+      @content;
     }
-  }
-
-  @else if $point==mlg {
+  } @else if $point==mlg {
     @media (min-width: 1024px) {
-      @content ;
+      @content;
     }
-  }
-
-  @else if $point==max-mlg {
+  } @else if $point==max-mlg {
     @media (max-width: 1023px) {
-      @content ;
+      @content;
     }
-  }
-
-  @else if $point==xl {
+  } @else if $point==xl {
     @media (min-width: 1200px) {
-      @content ;
+      @content;
     }
-  }
-
-  @else if $point==max-xl {
+  } @else if $point==max-xl {
     @media (max-width: 1199px) {
-      @content ;
+      @content;
     }
-  }
-
-  @else if $point==xxl {
+  } @else if $point==xxl {
     @media (min-width: 1400px) {
-      @content ;
+      @content;
     }
-  }
-
-  @else if $point==max-xxl {
+  } @else if $point==max-xxl {
     @media (max-width: 1399px) {
-      @content ;
+      @content;
     }
-  }
-
-  @else if $point==xxxl {
+  } @else if $point==xxxl {
     @media (min-width: 1600px) {
-      @content ;
+      @content;
     }
-  }
-
-  @else if $point==max-xxxl {
+  } @else if $point==max-xxxl {
     @media (max-width: 1599px) {
-      @content ;
+      @content;
     }
   }
 }
-
 
 // Usage
 //************
@@ -191,23 +160,16 @@
 //   }
 // }
 
+//*=====================****=====================
 
-
-//*=====================****===================== 
-
-
-
-
-
-//*=====================****===================== 
-//*Retina ready image 
+//*=====================****=====================
+//*Retina ready image
 @mixin retina-image($image, $width, $height) {
-
   @media (min--moz-device-pixel-ratio: 1.3),
-  (-o-min-device-pixel-ratio: 2.6/2),
-  (-webkit-min-device-pixel-ratio: 1.3),
-  (min-device-pixel-ratio: 1.3),
-  (min-resolution: 1.3dppx) {
+    (-o-min-device-pixel-ratio: 2.6/2),
+    (-webkit-min-device-pixel-ratio: 1.3),
+    (min-device-pixel-ratio: 1.3),
+    (min-resolution: 1.3dppx) {
     background-image: url($image);
     background-size: $width $height;
   }
@@ -221,14 +183,10 @@
 //   @include retina-image("my-image2x.png", 1000px, 500px);
 // }
 
-//*=====================****===================== 
+//*=====================****=====================
 
-
-
-
-
-//*=====================****===================== 
-//* Arrow with border 
+//*=====================****=====================
+//* Arrow with border
 @mixin arrow($direction: down, $size: 5px, $color: $theme-color) {
   width: 0;
   height: 0;
@@ -237,27 +195,20 @@
     border-top: $size solid transparent;
     border-bottom: $size solid transparent;
     border-right: $size solid $color;
-  }
-
-  @else if ($direction==right) {
+  } @else if ($direction==right) {
     border-top: $size solid transparent;
     border-bottom: $size solid transparent;
     border-left: $size solid $color;
-  }
-
-  @else if ($direction==down) {
+  } @else if ($direction==down) {
     border-left: $size solid transparent;
     border-right: $size solid transparent;
     border-top: $size solid $color;
-  }
-
-  @else {
+  } @else {
     border-left: $size solid transparent;
     border-right: $size solid transparent;
     border-bottom: $size solid $color;
   }
 }
-
 
 // Usage:
 // *************
@@ -268,45 +219,35 @@
 //   @include arrow();
 // }
 
-
 //==----with custom arguments
 
 // div {
 //   @include arrow(up, 10px, #efefef);
 // }
 
+//*=====================****=====================
 
-//*=====================****===================== 
-
-
-
-
-//*=====================****===================== 
-//*Creating box 
+//*=====================****=====================
+//*Creating box
 @mixin box($width, $height: $width) {
   width: $width;
   height: $height;
 }
 
-
-//* ===== Usage ===== 
+//* ===== Usage =====
 
 //====---You can pass width && height
 
 //   @include box(200px, 300px);
-
 
 //====or just pass width and the height
 
 //      will default to the width value */
 //   @include box(200px);
 
+//*=====================****=====================
 
-//*=====================****===================== 
-
-
-
-//*=====================****===================== 
+//*=====================****=====================
 //*backgorund size cover
 
 @mixin background-cover {
@@ -315,20 +256,16 @@
   background-position: center;
 }
 
-//* ===== Usage ===== 
+//* ===== Usage =====
 
 // div {
 //   background-image: url("cute-doggo.png");
 //   @include background-cover;
 // }
 
-//*=====================****===================== 
+//*=====================****=====================
 
-
-
-
-
-//*=====================****===================== 
+//*=====================****=====================
 //*Hover effect for no-touch device only. (touch screen device dont have any hover state)
 
 @mixin hover {
@@ -351,16 +288,9 @@
 //   }
 // }
 
-//*=====================****===================== 
+//*=====================****=====================
 
-
-
-
-
-
-//*=====================****===================== 
-
-
+//*=====================****=====================
 
 //* text clamp mixin
 @mixin text-clamp($numLines: 1) {
@@ -381,18 +311,15 @@
 // p {
 //    @include text-clamp(2);
 // }
-//*=====================****===================== 
+//*=====================****=====================
 
-
-
-
-//*=====================****===================== 
+//*=====================****=====================
 
 @mixin position($position, $args) {
   @each $o in top right bottom left {
     $i: index($args, $o);
 
-    @if $i and $i+1 <=length($args) and type-of(nth($args, $i + 1))==number {
+    @if $i and $i + 1 <=length($args) and type-of(nth($args, $i + 1)) ==number {
       #{$o}: nth($args, $i + 1);
     }
   }
@@ -400,6 +327,5 @@
   position: $position;
 }
 
-
 //@include position(relative, $args);
-//*=====================****===================== 
+//*=====================****=====================

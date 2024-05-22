@@ -1,5 +1,4 @@
-import { LitElement, html } from '../../assets/js/lit.js';
-
+import { LitElement, html } from "../../assets/js/lit.js";
 
 export class Links extends LitElement {
   createRenderRoot() {
@@ -7,11 +6,7 @@ export class Links extends LitElement {
   }
 
   render() {
-    return html`
-    <div class="footer__block">
-             
-            </div>
-    `;
+    return html` <div class="footer__block"></div> `;
   }
 }
-customElements.define('footer-links', Links);
+customElements.define("footer-links", Links);

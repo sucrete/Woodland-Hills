@@ -10,13 +10,13 @@
   %text-uppercase,
   %of-hidden;
   @include add-prefix(transition, $transition);
-  border: 1px solid $theme-color;
+  // border: 1px solid $theme-color;
   border-radius: .25rem;
-  background-color: $theme-color;
-  color: $title-color;
+  background-color: $team-orange;
+  color: $wan-orange;
   padding-inline: 2rem;
   line-height: calc($btn-lh - 8px);
-
+@include shadow(black);
 
   &:before,
   &:after {
