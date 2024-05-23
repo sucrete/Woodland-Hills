@@ -2,13 +2,13 @@
  * Basic typography style for copy text
  */
 
-
 body {
   color: $text-color;
   background-color: $body-bg-color;
   font-size: 1rem;
   line-height: 1.625;
   font-family: $text-font;
+  letter-spacing: 0.4px;
 }
 
 h1,
@@ -32,11 +32,13 @@ h1 {
 }
 
 h2 {
-  @include font-size($fs-h2);
+  font-size: 77px;
+  line-height: 90%;
+  color: White;
 }
 
 h3 {
-  @include font-size($fs-h3);
+  font-size: 42px;
 }
 
 h4 {

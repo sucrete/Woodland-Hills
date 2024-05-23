@@ -28,6 +28,7 @@
     <script type="module" src="./components/footer/contact.js"></script>
     <script type="module" src="./components/footer/footer-bottom.js"></script>
     <script type="module" src="./components/footer/logo-block.js"></script>
+    <script type="module" src="./components/footer/newsletter.js"></script>
   </head>
 
   <body>
@@ -99,13 +100,8 @@
                       >
                     </li>
                     <li>
-                      <a href="19th-hole.html" style="padding-right: 0px"
-                        >The 19th Hole</a
-                      >
-                    </li>
-                    <li>
-                      <a href="membership-rates.html" style="padding-right: 0px"
-                        >Membership
+                      <a href="greens-fees.html" style="padding-right: 0px"
+                        >Greens Fees
                       </a>
                     </li>
                     <li>
@@ -140,7 +136,7 @@
     <section class="hero hero--home2">
       <div
         class="hero__wrapper"
-        style="background-image: url(assets/images/golf-images/1363915-2.jpg)"
+        style="background-image: url(assets/images/golf-images/calm-boy.jpg)"
       >
         <div class="container gx-4 gx-sm-0 pt-5 pb-5">
           <div class="row g-5 align-items-center">
@@ -151,7 +147,7 @@
                 data-aos-duration="1000"
                 data-aos-once="true"
               >
-                <h1>In the Heartland, Where Everything is Greener</h1>
+                <h2>In the Heartland, Where Everything is Greener</h2>
                 <a href="/rates.html" class="custom-btn"
                   ><span>Greens Fees</span></a
                 >
@@ -169,27 +165,27 @@
         <div class="section-header">
           <div class="section-header__content">
             <p class="subtitle">About Us</p>
-            <h2>Shirkey Golf Course</h2>
+            <h3>Woodland Hills</h3>
           </div>
         </div>
         <div class="blog__wrapper">
           <div class="row justify-content-between gap-7">
             <div class="col-lg-8 mb-3 mb-sm-0 pb-5 pb-sm-0">
               <p>
-                Shirkey Golf Course is a challenging 18-hole course located in
-                Richmond, MO only a short distance from Kansas City at Highways
-                210 and 13. This championship style course is semi-private and
-                was designed by golf course designer and a founding member of
-                the GCSAA, Chet Mendenhall in 1969. Golf Digest ranked Shirkey
-                as a top public course in Kansas City area with a 4 ½ star
-                rating. This 18 hole course features Zoysia fairways and tee
-                boxes with Bent grass greens. With four sets of tees to choose
-                from the par 71 course was designed to maximize the challenges
-                of the game with yardages stretching from 5500 yards to 7020
-                yards and a course rating of 73.9 with a slope of 126. Shirkey
-                offers a driving range, pro shop, banquet room and restaurant.
-                Shirkey consistently strives to offer golfers of all abilities a
-                great experience.
+                Woodland Hills is a public 18-hole regulation course 6,156 yards
+                from the Blue Tees, 5490 yards from the White Tees, 5068 yards
+                from the Yellow Tees and 4734 yards from the Red Tees.
+              </p>
+              <p>
+                Woodland Hills was for many years a private country club that
+                went by the name Fort Scott Country Club. Because of some
+                difficult economic times in Fort Scott, the country club also
+                began to suffer financially and for many years, fell into deep
+                disrepair. In 2012, the City of Fort Scott and many gracious
+                donors stepped in and purchased the course, renaming it Woodland
+                Hills Golf Course. At the time of the City's purchase, only 8
+                holes of the 18 were open and playable, and the 100-year-old
+                Clubhouse was in need of much repair.
               </p>
             </div>
             <div
@@ -226,34 +222,7 @@
     <!-- ========== Footer Section start Here========== -->
     <footer class="footer">
       <!-- Footer Newsletter -->
-      <div class="newsletter newsletter--lowerd">
-        <div class="container">
-          <div class="newsletter__wrapper">
-            <div class="row justify-content-center">
-              <div class="col-lg-6">
-                <div class="newsletter__content text-center">
-                  <div class="common-header">
-                    <p class="subtitle">Get Update</p>
-                    <h2>Get Latest Updates and Deals</h2>
-                  </div>
-                  <div class="input-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Enter Your mail"
-                      aria-label="Subscirbe to Newsletter"
-                      aria-describedby="newsletter-input"
-                    />
-                    <button class="subscribe-btn" id="newsletter-input">
-                      Subscribe
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <newsletter-section></newsletter-section>
 
       <!-- Main footer part -->
       <div class="footer__wrapper padding-top padding-top padding-bottom pb-0">

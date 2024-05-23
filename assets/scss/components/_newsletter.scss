@@ -25,6 +25,10 @@
     h2 {
       max-inline-size: 100%;
     }
+    h3 {
+      line-height: 100%;
+      max-inline-size: unset;
+    }
   }
 
   .form-control {

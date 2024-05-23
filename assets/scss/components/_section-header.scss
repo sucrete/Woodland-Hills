@@ -56,11 +56,12 @@
 }
 
 .subtitle {
-  @extend %text-semibold,
-  %text-uppercase;
+  font-size: 12px;
+  @extend %text-uppercase;
   color: $title-color;
   letter-spacing: .2em;
   margin-bottom: 1rem !important;
+  font-family: $text-bold;
 }
 
 

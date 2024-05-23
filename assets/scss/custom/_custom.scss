@@ -87,10 +87,15 @@ section .hero--home2 .hero__content h1 {
 .hero__content {
   //.custom-btn button for "Greens Fees"
   .custom-btn {
+    @extend %THE-transition;
     @media screen and (max-width: 991px) {
       margin-block-start: 12px;
       padding-inline: 1.2rem;
       line-height: 38px;
+      
+    }
+    &:hover {
+      transform: translateY(-2px)
     }
   }
 }
