@@ -23,12 +23,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- reusable Lit components -->
-    <script type="module" src="./components/footer/about.js"></script>
-    <script type="module" src="./components/footer/links.js"></script>
-    <script type="module" src="./components/footer/contact.js"></script>
-    <script type="module" src="./components/footer/footer-bottom.js"></script>
-    <script type="module" src="./components/footer/logo-block.js"></script>
-    <script type="module" src="./components/footer/newsletter.js"></script>
+    <script type="module" src="./components/footer/footer-content.js"></script>
   </head>
 
   <body>
@@ -47,17 +42,17 @@
               <div class="header-top-area">
                 <ul class="left">
                   <li>
-                    <a href="tel:8164702582" target="_blank"
+                    <a href="tel:6202235060" target="_blank"
                       ><i class="fa-solid fa-phone"></i>
-                      <span>(816) 470-2582</span></a
+                      <span>(620) 223-5060</span></a
                     >
                   </li>
                   <li>
                     <a
-                      href="https://maps.app.goo.gl/gU6kEd5yXvKLAApL7"
+                      href="https://maps.app.goo.gl/C7aGcBhCdeEAGumu6"
                       target="_blank"
-                      ><i class="fa-solid fa-location-dot"></i> 901 Wollard
-                      Blvd, Richmond, MO 64085</a
+                      ><i class="fa-solid fa-location-dot"></i> 2414 Horton St,
+                      Fort Scott, KS 66701</a
                     >
                   </li>
                   <li>
@@ -263,65 +258,7 @@
     <!-- ========== Footer Section start Here========== -->
 
     <footer class="footer">
-      <!-- Footer Newsletter -->
-      <newsletter-section></newsletter-section>
-
-      <!-- Main footer part -->
-      <div class="footer__wrapper padding-top padding-top padding-bottom pb-0">
-        <div class="container gx-4 gx-sm-0">
-          <div class="row g-5 pb-2">
-            <div class="col-12 col-md-8 pb-4">
-              <!-- logo section along the top of footer-->
-              <logo-block></logo-block>
-              <div class="row">
-                <div class="col-12 col-md-6">
-                  <!-- hours and social -->
-                  <footer-about></footer-about>
-                </div>
-                <div class="col-12 col-md-6">
-                  <!-- contact -->
-                  <footer-contact></footer-contact>
-                </div>
-              </div>
-            </div>
-            <!-- Weather -->
-            <div class="col-12 col-md-4 weather">
-              <div class="weather-block">
-                <div class="footer__block-title text-center">
-                  <h3>Weather</h3>
-                  <p class="subtitle">Fort Scott, KS</p>
-                </div>
-                <a
-                  class="weatherwidget-io"
-                  href="https://forecast7.com/en/37d84n94d71/fort-scott/?unit=us"
-                  data-label_1=""
-                  data-label_2=""
-                  data-font="Helvetica"
-                  data-days="3"
-                  data-textcolor="#ffffff"
-                  data-suncolor="#fe9400"
-                  >FORT SCOTT KANSAS</a
-                >
-                <script>
-                  !(function (d, s, id) {
-                    var js,
-                      fjs = d.getElementsByTagName(s)[0];
-                    if (!d.getElementById(id)) {
-                      js = d.createElement(s);
-                      js.id = id;
-                      js.src = "https://weatherwidget.io/js/widget.min.js";
-                      fjs.parentNode.insertBefore(js, fjs);
-                    }
-                  })(document, "script", "weatherwidget-io-js");
-                </script>
-              </div>
-            </div>
-          </div>
-
-          <hr class="opacity-100" />
-          <footer-bottom class="footer-bottom"> </footer-bottom>
-        </div>
-      </div>
+      <footer-content></footer-content>
     </footer>
     <!-- ========== Footer Section ends Here========== -->
 
@@ -334,9 +271,9 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/all.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/weather-widget.js"></script>
   </body>
 </html>

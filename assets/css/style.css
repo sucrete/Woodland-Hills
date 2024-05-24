@@ -1037,6 +1037,7 @@ h6 a {
 
 h1 {
   font-size: calc(1.575rem + 3.3428571429vw);
+  color: white;
 }
 @media (min-width: 1400px) {
   h1 {
@@ -3062,6 +3063,15 @@ ol {
   position: relative;
   padding-top: 1rem;
 }
+@media screen and (max-width: 768px) {
+  .footer__wrapper .container .row .weather {
+    border-left: none;
+    border-top: 1.5px solid rgba(255, 255, 255, 0.0901960784);
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 @media (min-width: 576px) {
   .footer__wrapper {
     padding-block-start: 250px;
@@ -3619,8 +3629,16 @@ body #magicMouseCursor {
   margin-bottom: -150px;
   z-index: 1;
 }
-.newsletter--lowerd .container {
-  padding: 0;
+@media screen and (min-width: 768px) {
+  .newsletter--lowerd .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .newsletter--lowerd {
+    margin-bottom: -125px;
+  }
 }
 .newsletter__wrapper {
   background-color: #F8F5F0;
@@ -3636,16 +3654,28 @@ body #magicMouseCursor {
     margin-block-end: 40px;
   }
 }
-.newsletter .common-header h2 {
-  max-inline-size: 100%;
-}
 .newsletter .common-header h3 {
   line-height: 100%;
   max-inline-size: unset;
 }
+@media screen and (max-width: 768px) {
+  .newsletter .common-header h3 {
+    font-size: 33px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .newsletter .input-group .form-control {
+    font-size: 14px;
+  }
+  .newsletter .input-group .subscribe-btn {
+    font-size: 14px;
+  }
+}
 .newsletter .form-control {
   padding-inline: 1.5rem;
   height: auto;
+  font-family: "Apfel Regular", sans-serif;
+  letter-spacing: 0.4px;
 }
 .newsletter .form-control:focus {
   box-shadow: none;
@@ -4173,9 +4203,9 @@ section .hero--home2 .hero__content h1 {
 }
 @media only screen and (max-width: 768px) {
   .header-top-area .booking-btn {
-    background-color: #e8a41d;
+    background-color: #ff9400;
     border-radius: 0.25rem;
-    color: #212c47;
+    color: white;
     display: inline-block;
     font-weight: 700;
     padding: 0.25rem 0.75rem;
@@ -4200,7 +4230,8 @@ section .hero--home2 .hero__content h1 {
 
 @media screen and (max-width: 767px) {
   section.section-rates {
-    padding-top: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   section.section-rates .container {
     padding-left: 1rem;

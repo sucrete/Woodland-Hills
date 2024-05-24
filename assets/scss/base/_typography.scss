@@ -29,6 +29,7 @@ h6 {
 
 h1 {
   @include font-size($fs-h1);
+  color: white;
 }
 
 h2 {

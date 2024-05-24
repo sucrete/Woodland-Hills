@@ -71,9 +71,9 @@ section .hero--home2 .hero__content h1 {
     display: none;
 
     @media only screen and (max-width: 768px) {
-      background-color: #e8a41d;
+      background-color: $team-orange;
       border-radius: 0.25rem;
-      color: $title-color;
+      color: white;
       display: inline-block;
       font-weight: 700;
       padding: 0.25rem 0.75rem;
@@ -109,7 +109,8 @@ section .hero--home2 .hero__content h1 {
 section {
   &.section-rates {
     @media screen and (max-width: 767px) {
-      padding-top: 3rem;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
       .container {
         padding-left: 1rem;
         padding-right: 1rem;

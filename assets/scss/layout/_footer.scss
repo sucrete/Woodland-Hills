@@ -44,6 +44,13 @@ $line-thickness: 1.5px;
           padding-right: 7rem;
           position: relative;
           padding-top: 1rem;
+          @media screen and (max-width: 768px) {
+            border-left: none;
+            border-top: $line-thickness solid $line-color;
+            padding-top: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
         }
       }
     }

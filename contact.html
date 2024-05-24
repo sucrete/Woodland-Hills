@@ -23,12 +23,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- reusable Lit components -->
-    <script type="module" src="./components/footer/about.js"></script>
-    <script type="module" src="./components/footer/links.js"></script>
-    <script type="module" src="./components/footer/contact.js"></script>
-    <script type="module" src="./components/footer/footer-bottom.js"></script>
-    <script type="module" src="./components/footer/logo-block.js"></script>
-    <script type="module" src="./components/footer/newsletter.js"></script>
+    <script type="module" src="./components/footer/footer-content.js"></script>
   </head>
 
   <body>
@@ -47,17 +42,17 @@
               <div class="header-top-area">
                 <ul class="left">
                   <li>
-                    <a href="tel:8164702582" target="_blank"
+                    <a href="tel:6202235060" target="_blank"
                       ><i class="fa-solid fa-phone"></i>
-                      <span>(816) 470-2582</span></a
+                      <span>(620) 223-5060</span></a
                     >
                   </li>
                   <li>
                     <a
-                      href="https://maps.app.goo.gl/gU6kEd5yXvKLAApL7"
+                      href="https://maps.app.goo.gl/C7aGcBhCdeEAGumu6"
                       target="_blank"
-                      ><i class="fa-solid fa-location-dot"></i> 901 Wollard
-                      Blvd, Richmond, MO 64085</a
+                      ><i class="fa-solid fa-location-dot"></i> 2414 Horton St,
+                      Fort Scott, KS 66701</a
                     >
                   </li>
                   <li>
@@ -141,7 +136,7 @@
     >
       <div class="container">
         <div class="page-header__content text-center">
-          <h2>Contact Us</h2>
+          <h1 class="header-heading">Contact Us</h1>
         </div>
       </div>
     </section>
@@ -170,8 +165,8 @@
                     <div class="contact__info-content">
                       <h6>Address</h6>
                       <p style="line-height: 125%">
-                        901 Wollard Blvd<br />
-                        Richmond, MO 64085
+                        2414 Horton St<br />
+                        Fort Scott, KS 6670
                       </p>
                     </div>
                   </li>
@@ -181,12 +176,12 @@
                     </div>
                     <div class="contact__info-content">
                       <h6>Phone</h6>
-                      <a href="tel:8164702582" target="_blank"
-                        ><span>(816) 470-2582</span></a
+                      <a href="tel:+16202235060" target="_blank"
+                        ><span>(620) 223-5060</span></a
                       >
                     </div>
                   </li>
-                  <li class="contact__info-item">
+                  <!-- <li class="contact__info-item">
                     <div class="contact__info-icon">
                       <i class="fa-solid fa-envelope"></i>
                     </div>
@@ -199,7 +194,7 @@
                         <br />
                       </p>
                     </div>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
             </div>
@@ -216,7 +211,7 @@
                 <div class="container">
                   <div class="map__wrapper">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.995526386659!2d-93.9560821!3d39.2656681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c19d9a937e66f9%3A0xf96f870190c82db9!2s901%20Wollard%20Blvd%2C%20Richmond%2C%20MO%2064085!5e0!3m2!1sen!2sus!4v1697554836042!5m2!1sen!2sus"
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12608.681398335213!2d-94.7144088!3d37.8094787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c7a1ee16191dfb%3A0xbb36b1a8031c1467!2sWoodland%20Hills%20Golf%20Course!5e0!3m2!1sen!2sus!4v1716588370671!5m2!1sen!2sus"
                       width="600"
                       height="450"
                       style="border: 0"
@@ -236,68 +231,7 @@
 
     <!-- ========== Footer Section start Here========== -->
     <footer class="footer">
-      <!-- Footer Newsletter -->
-      <newsletter-section></newsletter-section>
-
-      <!-- Main footer part -->
-      <div class="footer__wrapper padding-top padding-top padding-bottom pb-0">
-        <div class="container gx-4 gx-sm-0">
-          <div class="row g-5 pb-2">
-            <div class="col-12 col-md-8 pb-4">
-              <!-- logo section along the top of footer-->
-              <logo-block></logo-block>
-
-              <div class="row">
-                <div class="col-12 col-md-6">
-                  <!-- hours and social -->
-                  <footer-about></footer-about>
-                </div>
-                <div class="col-12 col-md-6">
-                  <!-- contact -->
-                  <footer-contact></footer-contact>
-                </div>
-              </div>
-            </div>
-
-            <!-- Weather -->
-            <div class="col-12 col-md-4 weather">
-              <div class="weather-block">
-                <div class="footer__block-title text-center">
-                  <h3>Weather</h3>
-                  <p class="subtitle">Fort Scott, KS</p>
-                </div>
-                <a
-                  class="weatherwidget-io"
-                  href="https://forecast7.com/en/37d84n94d71/fort-scott/?unit=us"
-                  data-label_1=""
-                  data-label_2=""
-                  data-font="Helvetica"
-                  data-days="3"
-                  data-textcolor="#ffffff"
-                  data-suncolor="#fe9400"
-                  >FORT SCOTT KANSAS</a
-                >
-                <script>
-                  !(function (d, s, id) {
-                    var js,
-                      fjs = d.getElementsByTagName(s)[0];
-                    if (!d.getElementById(id)) {
-                      js = d.createElement(s);
-                      js.id = id;
-                      js.src = "https://weatherwidget.io/js/widget.min.js";
-                      fjs.parentNode.insertBefore(js, fjs);
-                    }
-                  })(document, "script", "weatherwidget-io-js");
-                </script>
-              </div>
-            </div>
-          </div>
-
-          <hr class="opacity-100" />
-
-          <footer-bottom class="footer-bottom"> </footer-bottom>
-        </div>
-      </div>
+      <footer-content></footer-content>
     </footer>
     <!-- ========== Footer Section ends Here========== -->
 
@@ -309,16 +243,10 @@
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/flatpickr.js"></script>
     <script src="assets/js/all.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>
-    <script src="assets/js/countdown.min.js"></script>
-    <script src="assets/js/lightcase.js"></script>
-    <script src="assets/js/purecounter_vanilla.js"></script>
-    <script src="assets/js/progressbar.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/weather-widget.js"></script>
   </body>
 </html>
