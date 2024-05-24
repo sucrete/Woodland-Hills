@@ -12,7 +12,6 @@ section .hero--home2 .hero__content h1 {
   line-height: 100%;
 }
 
-
 //the top header on mobile
 .header-top-area {
   .left {
@@ -92,10 +91,9 @@ section .hero--home2 .hero__content h1 {
       margin-block-start: 12px;
       padding-inline: 1.2rem;
       line-height: 38px;
-      
     }
     &:hover {
-      transform: translateY(-2px)
+      transform: translateY(-2px);
     }
   }
 }
@@ -110,253 +108,117 @@ section .hero--home2 .hero__content h1 {
 //Rates content
 section {
   &.section-rates {
-    h2 {
-      // line-height: .95;
-      padding-left: 0.25rem;
-      text-align: center;
+    @media screen and (max-width: 767px) {
+      padding-top: 3rem;
+      .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
     }
-
-    .tee-table {
-      font-size: 11px;
-      font-weight: 500;
-      margin-top: 8px;
-      font-weight: 500;
-      font-family: Arial, Helvetica, sans-serif;
-      text-transform: uppercase;
-      $border-color: #cfccc7;
-      letter-spacing: 0.7px;
-
-      tbody {
-        border-top: 1px solid $border-color !important;
-
-        tr {
-          border: 1px solid $border-color;
-          border-top-width: 0px;
-
-          td {
-            padding: 15px 17px;
+    .container {
+      @media screen and (min-width: 768px) {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      
+      h2 {
+        // line-height: .95;
+        padding-left: 0.25rem;
+        text-align: center;
+      }
+      .table > :not(caption) > * > * {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1.2rem;
+        padding-right: 1.5rem;
+        border-bottom-color: rgb(171, 171, 171);
+      }
+      $table-font-size: 19px;
+      $table-font-size-mobile: 15px;
+      table {
+        thead {
+          tr {
+            .table-title {
+              font-family: "Cormorant", serif;
+              font-size: 35px;
+              padding-left: 1.1rem;
+              font-weight: 500;
+              letter-spacing: -1px;
+              line-height: 90%;
+            }
+            th {
+              padding-bottom: 0.5rem !important;
+              font-size: $table-font-size;
+            }
           }
+        }
+        .cntr {
+          text-align: center;
+        }
+        .right {
+          text-align: right;
+        }
+        th {
+          font-family: $text-bold;
+        }
+        th,
+        td {
+          font-size: $table-font-size;
         }
       }
 
-      &-top {
-        margin-bottom: 0px;
-        background-color: yellow;
-
-        tbody {
-          border-bottom: 1px solid $border-color;
-          tr {
-            .par {
-              color: rgb(15, 100, 15);
-            }
-
-            .handicap {
-              color: rgb(109, 74, 17);
-            }
-
-            &:last-of-type {
-              border-bottom-width: 0px;
-
-              td {
-                border-bottom-width: 0px;
-              }
-            }
-          }
+      .row {
+        --bs-gutter-x: 5rem;
+      }
+      .row,
+      .row *,
+      .col,
+      .gx-5 {
+        @media screen and (max-width: 768px) {
+          --bs-gutter-x: 0rem;
         }
       }
-
-      &-bottom {
-        margin-top: 0px;
-        margin-bottom: 0px;
-
-        tbody {
-          border-top: 0px solid black !important;
-          tr {
-            td {
-              &.dot {
-                width: 2%;
-                padding-right: 0px;
-
-                span {
-                  display: inline-block;
-                  height: 12px;
-                  width: 12px;
-                  border-radius: 99px;
-                  margin-bottom: -2.2px;
-                }
-                &-black {
-                  span {
-                    background-color: #680000;
-                  }
-                }
-              }
-
-              &:nth-of-type(2) {
-                padding-left: 9px;
-              }
-
-              &:last-of-type {
-                text-align: right;
-              }
-            }
+      hr {
+        height: 1.25px;
+        background: rgba(255, 255, 255, 0);
+        opacity: 0.08;
+        margin: 3rem 0 2.75rem 0;
+      }
+      @media screen and (max-width: 768px) {
+        table {
+          & > :not(caption) > * > * {
+            padding-top: .75rem !important;
+            padding-bottom: .75rem !important;
+            padding-left: .9rem !important;
+            padding-right: 1rem;
           }
-        }
-        &.particulars {
-          tbody {
-            border-top: 0px solid black !important;
+          thead {
             tr {
-              background-color: #f8f5f0;
-              td:last-of-type {
-                text-align: left;
+              .table-title {
+                font-size: 30px;
+                padding-left: .6rem !important;
+              }
+              th {
+                font-size: $table-font-size-mobile;
               }
             }
+          }
+          th,
+          td {
+            font-size: $table-font-size-mobile;
           }
         }
       }
     }
   }
-  &.greens-fees {
-    h2 {
-      line-height: .95;
-      padding-left: 0.25rem;
-      text-align: center;
-    }
-    hr {
-      background-color: $border-color;
-      opacity: .45;
-    }
-    .tee-table {
-      font-size: 11px;
-      font-weight: 500;
-      margin-top: 8px;
-      font-weight: 500;
-      font-family: Arial, Helvetica, sans-serif;
-      text-transform: uppercase;
-      $border-color: #cfccc7;
-      letter-spacing: 0.7px;
-
-      tbody {
-        border-top: 1px solid $border-color !important;
-
-        tr {
-          border: 1px solid $border-color;
-          border-top-width: 0px;
-
-          td {
-            padding: 15px 17px;
-          }
-        }
-      }
-
-      &-top {
-        margin-bottom: 0px;
-        background-color: #f8f5f0;
-
-        tbody {
-          border-bottom: 1px solid $border-color;
-          tr {
-            .par {
-              color: rgb(15, 100, 15);
-            }
-
-            .handicap {
-              color: rgb(109, 74, 17);
-            }
-
-            &:last-of-type {
-              border-bottom-width: 0px;
-
-              td {
-                border-bottom-width: 0px;
-              }
-            }
-          }
-        }
-      }
-
-      &-bottom {
-        margin-top: 0px;
-        margin-bottom: 0px;
-
-        tbody {
-          border-top: 0px solid black !important;
-          tr {
-            td {
-              &.dot {
-                width: 2%;
-                padding-right: 0px;
-
-                span {
-                  display: inline-block;
-                  height: 12px;
-                  width: 12px;
-                  border-radius: 99px;
-                  margin-bottom: -2.2px;
-                }
-                &-black {
-                  span {
-                    background-color: #680000;
-                  }
-                }
-              }
-
-              &:nth-of-type(2) {
-                padding-left: 9px;
-              }
-
-              &:last-of-type {
-                text-align: right;
-              }
-            }
-          }
-        }
-        &.particulars {
-          tbody {
-            border-top: 0px solid black !important;
-            tr {
-              background-color: #f8f5f0;
-              td:last-of-type {
-                text-align: left;
-              }
-            }
-          }
-        }
-      }
-    }
+  .table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-accent-bg: rgba(240, 240, 240, 0.371);
+  }
+  .table-striped > tbody > tr:nth-of-type(even) > * {
+    --bs-table-accent-bg: rgba(240, 242, 249, 0);
   }
 }
 //table on Rates page
-.rates__wrapper {
-  table {
-    th {
-      &:nth-of-type(2) {
-        width: 20%;
-      }
-
-      &:nth-of-type(3) {
-        width: 15%;
-      }
-    }
-  }
-
-  .season-passes {
-    table {
-      th {
-        &:nth-of-type(1) {
-          width: 92%;
-        }
-      }
-
-      // tbody {
-      //     tr {
-      //         td:nth-of-type(2) {
-      //             text-align: right;
-      //         }
-      //     }
-      // }
-    }
-  }
-}
 
 //The Course page styling
 section.course {
@@ -721,8 +583,6 @@ section {
 //Lightbox styling
 
 .lightbox-wrapper {
-  
-
   /** LIGHTBOX MARKUP **/
 
   .lightbox {
@@ -765,7 +625,6 @@ section {
 //on The 19th Hole page, the wrapper for restaurant info
 .room__wrapper {
   h3 {
-    margin-block-end: 10px; 
+    margin-block-end: 10px;
   }
-
 }

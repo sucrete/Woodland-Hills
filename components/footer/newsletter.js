@@ -21,7 +21,7 @@ export class Newsletter extends LitElement {
                     <input
                       type="text"
                       class="form-control"
-                      placeholder="Enter Your mail"
+                      placeholder="Enter Your Email"
                       aria-label="Subscirbe to Newsletter"
                       aria-describedby="newsletter-input"
                     />

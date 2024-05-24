@@ -1,54 +1,79 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+$line-color: #ffffff17;
+$line-thickness: 1.5px;
 .footer {
+  .newsletter {
+    .subtitle {
+      color: $secondary-color;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
   div.hours span span.subheading,
   .subheading {
     color: #ffffff70;
   }
+  .subtitle {
+    color: white;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  &:not(.h3) {
+    font-size: 19px;
+    letter-spacing: 0.4px;
+    line-height: 120%;
+  }
   hr {
     margin-top: 50px;
-    background-color: #ffffff48;
-  }
-  .footer-bottom {
-    div {
-      p {
-        color: white;
-      }
-    }
+    background-color: $line-color;
+    height: $line-thickness;
   }
   @extend %of-hidden;
 
   &__wrapper {
     background-color: $secondary-color;
     padding-block-start: 200px;
+    .container {
+      .row {
+        .weather {
+          border-left: $line-thickness solid $line-color;
+          padding-left: 7rem;
+          padding-right: 7rem;
+          position: relative;
+          padding-top: 1rem;
+        }
+      }
+    }
     @include breakpoint(sm) {
       padding-block-start: 250px;
     }
   }
-.logo__block {
-  padding-bottom: 80px;
-  .footer__brand {
-    top: 5px;
-    position: relative;
-    img {
-      width: 300px;
+  .logo__block {
+    padding-bottom: 60px;
+    .footer__brand {
+      top: 5px;
+      position: relative;
+      img {
+        width: 450px;
+      }
     }
   }
-}
-  
 
   //footer block css
   &__block {
     &-title {
       // @extend %mb-2;
       @include breakpoint(lg) {
-        margin-block-end: 10px;
+        margin-block-end: 17px;
       }
 
       h3 {
         @extend %mb-0;
-        color: rgba(white,50%);
+        color: rgba(white, 50%);
+        font-size: 32px;
       }
     }
   }
@@ -70,7 +95,7 @@
 
     .social__block,
     div {
-      color: white
+      color: white;
     }
     .hours {
       h6 {
@@ -179,31 +204,22 @@
     }
   }
 
-  //footer gallery
-  &__gallery {
-    @extend %flex;
-    gap: 10px;
-
-    &-item {
-      a {
-        @extend %of-hidden, %d-block;
-        @include box(80px);
-        border-radius: 0.25rem;
-
-        @include breakpoint(md) {
-          @include box(80px);
+  // Footer bottom
+  .footer-bottom {
+    padding-bottom: 2rem;
+    // display: inline-flex;
+    .row {
+      display: flex;
+      [class*="col"] {
+        p {
+          color: white;
         }
-
-        img {
-          @extend %w-100, %h-100;
-          @include add-prefix(transition, $transition);
-          object-fit: cover;
+        a {
+          display: inline-flex;
         }
-
-        &:hover {
-          img {
-            @include add-prefix(transform, scale(1.1));
-          }
+        &.teequest-portal {
+          display: flex;
+          justify-content: end;
         }
       }
     }

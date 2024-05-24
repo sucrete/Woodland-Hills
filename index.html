@@ -148,7 +148,7 @@
                 data-aos-once="true"
               >
                 <h2>In the Heartland, Where Everything is Greener</h2>
-                <a href="/rates.html" class="custom-btn"
+                <a href="/greens-fees.html" class="custom-btn"
                   ><span>Greens Fees</span></a
                 >
               </div>
@@ -191,27 +191,19 @@
             <div
               class="col-lg-3 align-items-center p-5 rounded contact__form weather-col"
             >
-              <p class="text-center" style="color: #3a0304">Richmond, MO</p>
+              <p class="text-center" style="color: #454545">
+                Weather in Fort Scott, KS
+              </p>
               <a
                 class="weatherwidget-io"
-                href="https://forecast7.com/en/39d28n93d98/richmond/?unit=us"
+                href="https://forecast7.com/en/37d84n94d71/fort-scott/?unit=us"
+                data-font="Helvetica"
                 data-days="3"
-                data-textcolor="#3a0304ff"
-                data-raincolor="#5085e4"
-                >Richmond, MO, USA</a
+                data-textcolor="#454545"
+                data-suncolor="#fe9400"
+                data-raincolor="#00589e"
+                >Fort Scott, KS, USA</a
               >
-              <script>
-                !(function (d, s, id) {
-                  var js,
-                    fjs = d.getElementsByTagName(s)[0];
-                  if (!d.getElementById(id)) {
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = "https://weatherwidget.io/js/widget.min.js";
-                    fjs.parentNode.insertBefore(js, fjs);
-                  }
-                })(document, "script", "weatherwidget-io-js");
-              </script>
             </div>
           </div>
         </div>
@@ -227,44 +219,57 @@
       <!-- Main footer part -->
       <div class="footer__wrapper padding-top padding-top padding-bottom pb-0">
         <div class="container gx-4 gx-sm-0">
-          <logo-block></logo-block>
-          <div class="row g-5 pb-5">
-            <!-- about -->
-
-            <footer-about class="col-lg-3 col-sm-6"></footer-about>
-
-            <!-- contact -->
-            <footer-contact class="col-lg-3 col-sm-6"></footer-contact>
-
-            <!-- links -->
-            <footer-links class="col-lg-3 col-sm-6"></footer-links>
-
+          <div class="row g-5 pb-2">
+            <div class="col-12 col-md-8 pb-4">
+              <!-- logo section along the top of footer-->
+              <logo-block></logo-block>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <!-- hours and social -->
+                  <footer-about></footer-about>
+                </div>
+                <div class="col-12 col-md-6">
+                  <!-- contact -->
+                  <footer-contact></footer-contact>
+                </div>
+              </div>
+            </div>
             <!-- Weather -->
-            <div class="col-lg-3 col-sm-6 weather">
-              <a
-                class="weatherwidget-io"
-                href="https://forecast7.com/en/39d28n93d98/richmond/?unit=us"
-                data-days="3"
-                data-textcolor="#ffffff"
-                data-raincolor="#5085e4"
-                >Richmond, MO, USA</a
-              >
-              <script>
-                !(function (d, s, id) {
-                  var js,
-                    fjs = d.getElementsByTagName(s)[0];
-                  if (!d.getElementById(id)) {
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = "https://weatherwidget.io/js/widget.min.js";
-                    fjs.parentNode.insertBefore(js, fjs);
-                  }
-                })(document, "script", "weatherwidget-io-js");
-              </script>
+            <div class="col-12 col-md-4 weather">
+              <div class="weather-block">
+                <div class="footer__block-title text-center">
+                  <h3>Weather</h3>
+                  <p class="subtitle">Fort Scott, KS</p>
+                </div>
+                <a
+                  class="weatherwidget-io"
+                  href="https://forecast7.com/en/37d84n94d71/fort-scott/?unit=us"
+                  data-label_1=""
+                  data-label_2=""
+                  data-font="Helvetica"
+                  data-days="3"
+                  data-textcolor="#ffffff"
+                  data-suncolor="#fe9400"
+                  >FORT SCOTT KANSAS</a
+                >
+                <script>
+                  !(function (d, s, id) {
+                    var js,
+                      fjs = d.getElementsByTagName(s)[0];
+                    if (!d.getElementById(id)) {
+                      js = d.createElement(s);
+                      js.id = id;
+                      js.src = "https://weatherwidget.io/js/widget.min.js";
+                      fjs.parentNode.insertBefore(js, fjs);
+                    }
+                  })(document, "script", "weatherwidget-io-js");
+                </script>
+              </div>
             </div>
           </div>
+
           <hr class="opacity-100" />
-          <footer-bottom class="row footer-bottom"> </footer-bottom>
+          <footer-bottom class="footer-bottom"> </footer-bottom>
         </div>
       </div>
     </footer>

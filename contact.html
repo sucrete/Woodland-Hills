@@ -28,6 +28,7 @@
     <script type="module" src="./components/footer/contact.js"></script>
     <script type="module" src="./components/footer/footer-bottom.js"></script>
     <script type="module" src="./components/footer/logo-block.js"></script>
+    <script type="module" src="./components/footer/newsletter.js"></script>
   </head>
 
   <body>
@@ -159,7 +160,7 @@
             >
               <div class="contact__info">
                 <div class="common-header">
-                  <h2>Golf Course Contact</h2>
+                  <h3>Golf Course Contact</h3>
                 </div>
                 <ul class="contact__info-list">
                   <li class="contact__info-item">
@@ -236,74 +237,65 @@
     <!-- ========== Footer Section start Here========== -->
     <footer class="footer">
       <!-- Footer Newsletter -->
-      <div class="newsletter newsletter--lowerd">
-        <div class="container">
-          <div class="newsletter__wrapper">
-            <div class="row justify-content-center">
-              <div class="col-lg-6">
-                <div class="newsletter__content text-center">
-                  <div class="common-header">
-                    <p class="subtitle">Get Update</p>
-                    <h2>Get Latest Updates and Deals</h2>
-                  </div>
-                  <div class="input-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Enter Your mail"
-                      aria-label="Subscirbe to Newsletter"
-                      aria-describedby="newsletter-input"
-                    />
-                    <button class="subscribe-btn" id="newsletter-input">
-                      Subscribe
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <newsletter-section></newsletter-section>
 
       <!-- Main footer part -->
       <div class="footer__wrapper padding-top padding-top padding-bottom pb-0">
         <div class="container gx-4 gx-sm-0">
-          <div class="row g-5 pb-5">
-            <!-- about -->
-            <footer-about class="col-lg-3 col-sm-6"></footer-about>
+          <div class="row g-5 pb-2">
+            <div class="col-12 col-md-8 pb-4">
+              <!-- logo section along the top of footer-->
+              <logo-block></logo-block>
 
-            <!-- contact -->
-            <footer-contact class="col-lg-3 col-sm-6"></footer-contact>
-
-            <!-- links -->
-            <footer-links class="col-lg-3 col-sm-6"></footer-links>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <!-- hours and social -->
+                  <footer-about></footer-about>
+                </div>
+                <div class="col-12 col-md-6">
+                  <!-- contact -->
+                  <footer-contact></footer-contact>
+                </div>
+              </div>
+            </div>
 
             <!-- Weather -->
-            <div class="col-lg-3 col-sm-6 weather">
-              <a
-                class="weatherwidget-io"
-                href="https://forecast7.com/en/39d28n93d98/richmond/?unit=us"
-                data-days="3"
-                data-textcolor="#ffffff"
-                data-raincolor="#5085e4"
-                >Richmond, MO, USA</a
-              >
-              <script>
-                !(function (d, s, id) {
-                  var js,
-                    fjs = d.getElementsByTagName(s)[0];
-                  if (!d.getElementById(id)) {
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = "https://weatherwidget.io/js/widget.min.js";
-                    fjs.parentNode.insertBefore(js, fjs);
-                  }
-                })(document, "script", "weatherwidget-io-js");
-              </script>
+            <div class="col-12 col-md-4 weather">
+              <div class="weather-block">
+                <div class="footer__block-title text-center">
+                  <h3>Weather</h3>
+                  <p class="subtitle">Fort Scott, KS</p>
+                </div>
+                <a
+                  class="weatherwidget-io"
+                  href="https://forecast7.com/en/37d84n94d71/fort-scott/?unit=us"
+                  data-label_1=""
+                  data-label_2=""
+                  data-font="Helvetica"
+                  data-days="3"
+                  data-textcolor="#ffffff"
+                  data-suncolor="#fe9400"
+                  >FORT SCOTT KANSAS</a
+                >
+                <script>
+                  !(function (d, s, id) {
+                    var js,
+                      fjs = d.getElementsByTagName(s)[0];
+                    if (!d.getElementById(id)) {
+                      js = d.createElement(s);
+                      js.id = id;
+                      js.src = "https://weatherwidget.io/js/widget.min.js";
+                      fjs.parentNode.insertBefore(js, fjs);
+                    }
+                  })(document, "script", "weatherwidget-io-js");
+                </script>
+              </div>
             </div>
           </div>
+
           <hr class="opacity-100" />
-          <footer-bottom class="row footer-bottom"> </footer-bottom>
+
+          <footer-bottom class="footer-bottom"> </footer-bottom>
         </div>
       </div>
     </footer>

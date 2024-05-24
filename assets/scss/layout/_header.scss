@@ -1,9 +1,11 @@
 /*================*** Header Section Start Here     ***===================*/
 
 .header-menu-part {
-  .container {
-    padding-left: 0px;
-    padding-right: 0px;
+  @media screen and (min-width: 768px) {
+    .container {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
   }
 }
 .header-section {
@@ -246,7 +248,7 @@
   .mobile-logo {
     a {
       img {
-        max-height: 35px;
+        max-height: 40px;
       }
     }
   }
