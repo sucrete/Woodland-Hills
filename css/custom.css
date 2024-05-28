@@ -12,14 +12,22 @@
   transition: color 0.15s ease;
 }
 .menu > li > a:hover {
-  color: #6b7284;
+  color: var(--secondary-color);
 }
 
 /** 🍅🍅🍅🍅🍅 Hero 🍅🍅🍅🍅🍅 */
+/* landing page hero */
+section.hero.hero--home2 .button{
+  margin-block-start: 25px;
+}
+
+/* Greens Fees page hero */
 section.bg--cover.rack-rates {
   background-position: center 70%;
   background-color: rgba(0,0,0,.4);
 }
+
+
 
 /** 🍅🍅🍅🍅🍅 Button 🍅🍅🍅🍅🍅 */
 .button {
