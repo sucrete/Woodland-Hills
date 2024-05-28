@@ -8,21 +8,23 @@
 
     <link
       rel="shortcut icon"
-      href="assets/images/golf-images/flag-in-hole.png"
+      href="images/flag-in-hole.png"
       type="image/x-icon"
     />
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/aos.css" />
     <link rel="stylesheet" href="assets/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/lightcase.css" />
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/flatpickr.min.css" />
 
     <!-- main css for template -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
+    <!-- custom css for Woodland Hills -->
+    <link rel="stylesheet" href="css/custom.css" />
+
     <!-- reusable Lit components -->
+    <script type="module" src="./components/header/header-content.js"></script>
     <script type="module" src="./components/footer/footer-content.js"></script>
   </head>
 
@@ -35,102 +37,14 @@
 
     <!-- ========== Header Section Starts Here========== -->
     <header class="header-section header-2">
-      <div class="header-holder">
-        <div class="header-menu-part">
-          <div class="header-top open">
-            <div class="container con">
-              <div class="header-top-area">
-                <ul class="left">
-                  <li>
-                    <a href="tel:6202235060" target="_blank"
-                      ><i class="fa-solid fa-phone"></i>
-                      <span>(620) 223-5060</span></a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://maps.app.goo.gl/C7aGcBhCdeEAGumu6"
-                      target="_blank"
-                      ><i class="fa-solid fa-location-dot"></i> 2414 Horton St,
-                      Fort Scott, KS 66701</a
-                    >
-                  </li>
-                  <li>
-                    <a href="book-tee-time.html" class="booking-btn"
-                      ><span>Book a Tee Time</span></a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="container">
-            <div
-              class="header-bottom pt-2 pb-2 pt-md-0 pb-md-0 d-flex flex-wrap justify-content-between align-items-center"
-            >
-              <div class="brand-logo d-none d-lg-inline-block">
-                <div class="logo">
-                  <a href="index.html">
-                    <img
-                      src="assets/images/logo/whgc-painted-navy.svg"
-                      alt="logo"
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="header-wrapper justify-content-lg-end">
-                <div class="mobile-logo d-lg-none">
-                  <a href="index.html"
-                    ><img
-                      src="assets/images/logo/whgc-painted-navy.svg"
-                      alt="logo"
-                  /></a>
-                </div>
-                <div class="menu-area">
-                  <ul class="menu">
-                    <li>
-                      <a href="the-course.html" style="padding-right: 0px"
-                        >The Course</a
-                      >
-                    </li>
-                    <li>
-                      <a href="greens-fees.html" style="padding-right: 0px"
-                        >Greens Fees
-                      </a>
-                    </li>
-                    <li>
-                      <a href="events.html" style="padding-right: 0px"
-                        >Events</a
-                      >
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact</a>
-                    </li>
-                  </ul>
-                  <a href="book-tee-time.html" class="booking-btn"
-                    ><span>Book a Tee Time</span></a
-                  >
-
-                  <!-- toggle icons -->
-                  <div class="header-bar d-lg-none">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <header-content></header-content>
     </header>
     <!-- ========== Header Section Ends Here========== -->
 
     <!-- ================> Page header start here <================== -->
     <section
       class="page-header bg--cover book-tee-time"
-      style="background-image: url(assets/images/golf-images/foggy_morning.jpg)"
+      style="background-image: url(images/foggy_morning.jpg)"
     >
       <div class="container">
         <div class="page-header__content text-center">

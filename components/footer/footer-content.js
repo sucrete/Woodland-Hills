@@ -48,7 +48,7 @@ export class FooterContent extends LitElement {
                   <div class="logo__block">
                     <a class="footer__brand mb-1" href="index.html"
                       ><img
-                        src="assets/images/logo/whgc-painted-white.svg"
+                        src="images/whgc-painted-white.svg"
                         alt="logo"
                         class="footer-logo"
                     /></a>
