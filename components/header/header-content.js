@@ -45,7 +45,7 @@ export class Header extends LitElement {
                 <div class="logo">
                   <a href="index.html">
                     <img
-                      src="images/whgc-painted-navy.svg"
+                      src="images/logo.png"
                       alt="logo"
                       class="img-fluid"
                     />
@@ -55,30 +55,34 @@ export class Header extends LitElement {
               <div class="header-wrapper justify-content-lg-end">
                 <div class="mobile-logo d-lg-none">
                   <a href="index.html"
-                    ><img
-                      src="images/whgc-painted-navy.svg"
-                      alt="logo"
+                    ><img src="images/logo.png" alt="logo"
                   /></a>
                 </div>
                 <div class="menu-area">
                   <ul class="menu">
-                    <li>
-                      <a href="the-course.html" style="padding-right: 0px"
-                        >The Course</a
-                      >
-                    </li>
                     <li>
                       <a href="greens-fees.html" style="padding-right: 0px"
                         >Greens Fees
                       </a>
                     </li>
                     <li>
+                      <a href="the-course.html" style="padding-right: 0px"
+                        >The Course</a
+                      >
+                    </li>
+
+                    <li>
                       <a href="events.html" style="padding-right: 0px"
                         >Events</a
                       >
                     </li>
-                    <li>
-                      <a href="contact.html">Contact</a>
+                    <li class="last-li">
+                      <a href="javascript:void(0);">About <span><img src="assets/template-images/caret.png" alt="" class="caret" /></span></a>
+                      <ul class="submenu">
+                        <li><a href="about.html">History</a></li>
+                        <li><a href="about.html#contact">Contact</a></li>
+                        <li><a href="about.html#tee-time-policy">Tee Time Policy</a></li>
+                      </ul>
                     </li>
                   </ul>
                   <a href="book-tee-time.html" class="booking-btn"

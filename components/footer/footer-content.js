@@ -16,7 +16,7 @@ export class FooterContent extends LitElement {
                   <div class="col-lg-6">
                     <div class="newsletter__content text-center">
                       <div class="common-header">
-                        <p class="subtitle">Get Update</p>
+                        <p class="subtitle">Subscribe to Newsletter</p>
                         <h3>Get Latest Updates <br />and Deals</h3>
                       </div>
                       <div class="input-group">
@@ -48,7 +48,7 @@ export class FooterContent extends LitElement {
                   <div class="logo__block">
                     <a class="footer__brand mb-1" href="index.html"
                       ><img
-                        src="images/whgc-painted-white.svg"
+                        src="images/logo-footer.png"
                         alt="logo"
                         class="footer-logo"
                     /></a>

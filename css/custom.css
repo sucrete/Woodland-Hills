@@ -5,6 +5,10 @@
   --primary-color: #212c47;
   --secondary-color: #fe9400;
 }
+/** 🍅🍅🍅🍅🍅 Base styling 🍅🍅🍅🍅🍅 */
+.be-bolder {
+  font-family: "Apfel Mittel";
+}
 
 /** 🍅🍅🍅🍅🍅 Header 🍅🍅🍅🍅🍅 */
 .menu > li > a {
@@ -12,22 +16,72 @@
   transition: color 0.15s ease;
 }
 .menu > li > a:hover {
-  color: var(--secondary-color);
+  color: #657396;
+}
+.caret {
+  display: none;
+}
+@media (min-width: 992px) {
+  .menu li .submenu {
+    background: #fff;
+    width: 220px;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.057);
+    border-radius: 0.5rem;
+    /* visibility: visible;
+    opacity: 1; */
+    overflow: hidden;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.01), 0 2px 2px rgba(0, 0, 0, 0.02),
+      0 4px 4px rgba(0, 0, 0, 0.03), 0 8px 8px rgba(0, 0, 0, 0.04),
+      0 16px 16px rgba(0, 0, 0, 0.05);
+  }
+  .menu li .submenu li a {
+    color: var(--primary-color);
+    font-family: "Apfel Mittel";
+    font-size: 16px;
+    transition: all 0.15s ease;
+  }
+  .menu li .submenu li:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.057);
+  }
+  .menu li .submenu li a {
+    color: var(--primary-color);
+    background: rgb(250, 250, 250);
+  }
+  .menu li .submenu li:hover a {
+    background: #fff;
+    color: #657396;
+  }
+  .last-li a .caret {
+    display: inline-block;
+    width: 10px;
+    transition: all 0.15s ease;
+    margin-left: 3px;
+    margin-top: -2px;
+    opacity: 0.4;
+    transform-origin: 50% 48%;
+  }
+  .last-li:hover a .caret {
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+
+  .menu > li.last-li > a:hover {
+    color: var(--primary-color);
+  }
 }
 
 /** 🍅🍅🍅🍅🍅 Hero 🍅🍅🍅🍅🍅 */
 /* landing page hero */
-section.hero.hero--home2 .button{
+section.hero.hero--home2 .button {
   margin-block-start: 25px;
 }
 
 /* Greens Fees page hero */
 section.bg--cover.rack-rates {
   background-position: center 70%;
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
-
-
 
 /** 🍅🍅🍅🍅🍅 Button 🍅🍅🍅🍅🍅 */
 .button {
@@ -57,4 +111,94 @@ section.bg--cover.rack-rates {
 
 .footer__wrapper {
   background-color: var(--primary-color);
+}
+
+/*~ 🥎🥎🥎🥎🥎 Landing page styling 🥎🥎🥎🥎🥎 */
+.info-home p {
+  font-size: 17px;
+  color: black;
+}
+.info-home .second-col {
+  padding-left: 70px;
+}
+.second-col > div {
+  margin: auto;
+}
+.best-of-link .best-of-image {
+  transition: all 0.15s ease;
+  max-height: 80px;
+}
+.best-of-link .best-of-image:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.01), 0 2px 2px rgba(0, 0, 0, 0.02),
+    0 4px 4px rgba(0, 0, 0, 0.03), 0 8px 8px rgba(0, 0, 0, 0.04),
+    0 16px 16px rgba(0, 0, 0, 0.05);
+}
+.second-col .be-bolder {
+  /* font-size: 15px; */
+  line-height: 120%;
+  padding-top: 14px;
+}
+.second-col hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 20%;
+}
+/* @media screen and (min-width: 768px) {
+  .first-col {
+    padding-top: 40px
+  }
+} */
+
+/*~ 🥎🥎🥎🥎🥎 About page styling 🥎🥎🥎🥎🥎 */
+#contact,
+#tee-time-policy {
+  scroll-margin-top: 250px;
+}
+section.history .text-container {
+  column-count: 2;
+  column-gap: 50px;
+  text-align: justify;
+  font-size: 17px;
+}
+
+section.history .text-container p {
+  color:#212c47
+}
+section.history .text-container .golf-illustration {
+  float: left;
+  height: auto;
+  width: 60%;
+  padding-right: 45px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+section.history .text-container h4 {
+  font-size: 31px;
+}
+section.history h3 {
+  font-size: 58px;
+  line-height: 110%;
+}
+section.history .golf-divider {
+  height: 11px;
+}
+
+@media (min-width: 768px) {
+  section.history .text-container {
+    column-count: 2;
+    column-gap: 50px;
+    text-align: justify;
+    font-size: 17px;
+  }
+  section.contact .map .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+}
+
+section.tee-time-policy .container p {
+  text-align: justify;
+  font-size: 17px;
 }
