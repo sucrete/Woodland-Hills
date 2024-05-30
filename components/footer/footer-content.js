@@ -72,7 +72,7 @@ export class FooterContent extends LitElement {
 
                         <div class="social__block">
                           <div>Follow Us:</div>
-                          <ul class="social">
+                          <ul class="social no-bullets">
                             <li class="social__item">
                               <a
                                 href="https://www.facebook.com/shirkeygolf/"
@@ -101,7 +101,7 @@ export class FooterContent extends LitElement {
                           <h3>Contact</h3>
                         </div>
                         <div class="footer__block-body">
-                          <ul class="footer__info">
+                          <ul class="footer__info no-bullets">
                             <li class="footer__info-item">
                               <span><i class="fa-solid fa-phone"></i></span>
                               <a href="tel:6202235060" target="_blank">

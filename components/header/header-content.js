@@ -13,7 +13,7 @@ export class Header extends LitElement {
           <div class="header-top">
             <div class="container">
               <div class="header-top-area">
-                <ul class="left">
+                <ul class="left no-bullets">
                   <li>
                     <a href="tel:6202235060" target="_blank"
                       ><i class="fa-solid fa-phone"></i>
@@ -59,7 +59,7 @@ export class Header extends LitElement {
                   /></a>
                 </div>
                 <div class="menu-area">
-                  <ul class="menu">
+                  <ul class="menu no-bullets">
                     <li>
                       <a href="greens-fees.html" style="padding-right: 0px"
                         >Greens Fees
@@ -78,7 +78,7 @@ export class Header extends LitElement {
                     </li>
                     <li class="last-li">
                       <a href="javascript:void(0);">About <span><img src="assets/template-images/caret.png" alt="" class="caret" /></span></a>
-                      <ul class="submenu">
+                      <ul class="submenu no-bullets">
                         <li><a href="about.html">History</a></li>
                         <li><a href="about.html#contact">Contact</a></li>
                         <li><a href="about.html#tee-time-policy">Tee Time Policy</a></li>
