@@ -132,6 +132,7 @@ section.bg--cover.rack-rates {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.01), 0 2px 2px rgba(0, 0, 0, 0.02),
     0 4px 4px rgba(0, 0, 0, 0.03), 0 8px 8px rgba(0, 0, 0, 0.04),
     0 16px 16px rgba(0, 0, 0, 0.05);
+  transform: translateY(-1px);
 }
 .second-col .be-bolder {
   /* font-size: 15px; */
@@ -154,22 +155,16 @@ section.bg--cover.rack-rates {
 #tee-time-policy {
   scroll-margin-top: 250px;
 }
-section.history .text-container {
-  column-count: 2;
-  column-gap: 50px;
-  text-align: justify;
-  font-size: 17px;
-}
 
 section.history .text-container p {
-  color:#212c47
+  color: #212c47;
 }
 section.history .text-container .golf-illustration {
   float: left;
   height: auto;
-  width: 60%;
+  width: 40%;
   padding-right: 45px;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
   padding-top: 10px;
   padding-left: 10px;
 }
@@ -195,7 +190,10 @@ section.history .golf-divider {
     padding-left: 0;
     padding-right: 0;
   }
-  
+  section.tee-time-policy .container p {
+    column-count: 2;
+    column-gap: 50px;
+  }
 }
 
 section.tee-time-policy .container p {
