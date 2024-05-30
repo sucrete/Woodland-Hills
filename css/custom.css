@@ -30,6 +30,9 @@ a {
 .header-holder a {
   text-decoration: none;
 }
+.header-holder a svg {
+  opacity: .4;
+}
 @media (min-width: 992px) {
   .menu li .submenu {
     background: #fff;
