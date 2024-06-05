@@ -65,23 +65,22 @@ export class Header extends LitElement {
                         >Greens Fees
                       </a>
                     </li>
-                    <li>
-                      <a href="the-course.html" style="padding-right: 0px"
-                        >The Course</a
-                      >
-                    </li>
 
                     <li>
                       <a href="events.html" style="padding-right: 0px"
                         >Events</a
                       >
                     </li>
+                    <li>
+                      <a href="history.html" style="padding-right: 0px"
+                        >Course History</a
+                      >
+                    </li>
                     <li class="last-li">
-                      <a href="javascript:void(0);">About <span><img src="assets/template-images/caret.png" alt="" class="caret" /></span></a>
+                      <a href="javascript:void(0);">Contact <span><img src="assets/template-images/caret.png" alt="" class="caret" /></span></a>
                       <ul class="submenu no-bullets">
-                        <li><a href="about.html">History</a></li>
-                        <li><a href="about.html#contact">Contact</a></li>
-                        <li><a href="about.html#tee-time-policy">Tee Time Policy</a></li>
+                        <li><a href="contact.html">Contact Information</a></li>
+                        <li><a href="contact.html#tee-time-policy">Tee Time Policy</a></li>
                       </ul>
                     </li>
                   </ul>

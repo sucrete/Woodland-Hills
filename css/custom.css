@@ -192,12 +192,17 @@ section.bg--cover.rack-rates {
   }
 } */
 
-/*~ 🥎🥎🥎🥎🥎 About page styling 🥎🥎🥎🥎🥎 */
-#contact,
-#tee-time-policy {
-  scroll-margin-top: 250px;
+
+/*~ 🥎🥎🥎🥎🥎 Greens Fees page styling 🥎🥎🥎🥎🥎 */
+
+@media (min-width: 768px) {
+  section.section-rates .container .table:first-of-type {
+    margin-bottom: 5rem !important;
+  }
 }
 
+
+/*~ 🥎🥎🥎🥎🥎 History page styling 🥎🥎🥎🥎🥎 */
 section.history .text-container p {
   color: #212c47;
 }
@@ -241,4 +246,11 @@ section.history .golf-divider {
 section.tee-time-policy .container p {
   text-align: justify;
   font-size: 17px;
+}
+
+
+/*~ 🥎🥎🥎🥎🥎 Contact page styling 🥎🥎🥎🥎🥎 */
+#contact,
+#tee-time-policy {
+  scroll-margin-top: 250px;
 }

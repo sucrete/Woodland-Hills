@@ -16,7 +16,7 @@ export class FooterContent extends LitElement {
                   <div class="col-lg-6">
                     <div class="newsletter__content text-center">
                       <div class="common-header">
-                        <p class="subtitle">Subscribe to Newsletter</p>
+                        <p class="subtitle">Subscribe to the Newsletter</p>
                         <h3>Get Latest Updates <br />and Deals</h3>
                       </div>
                       <div class="input-group">
