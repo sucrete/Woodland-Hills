@@ -61,7 +61,7 @@ export class Header extends LitElement {
                 <div class="menu-area">
                   <ul class="menu no-bullets">
                     <li>
-                      <a href="greens-fees.html" style="padding-right: 0px"
+                      <a href="rates.html" style="padding-right: 0px"
                         >Greens Fees
                       </a>
                     </li>
